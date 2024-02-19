@@ -17,13 +17,14 @@
       <div
         class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5"
       >
-        <button class="border-r-2 border-[#bfbfbf] pr-5">
+      <!-- negative button -->
+        <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
           <i class="fa-solid fa-minus"></i>
         </button>
 
-        <div class="font-bold">0</div>
-
-        <button class="border-l-2 border-[#bfbfbf] pl-5">
+        <div id="counter" class="font-bold">0</div>
+        <!-- positive button -->
+        <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
           <i class="fa-solid fa-plus"></i>
         </button>
       </div>
@@ -33,5 +34,7 @@
       src="https://kit.fontawesome.com/831751f82f.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
